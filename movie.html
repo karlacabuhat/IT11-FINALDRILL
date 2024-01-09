@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Searcher</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <h1 style ="text-align: center; color: rgb(14, 164, 34);"><b>Search for Movie</b></h1>
+  <input type="text" id="searchInput" placeholder="Enter movie title"><br>
+  <button onclick="searchMovies()" id="searchButton">Search</button>
+
+  
+  <div id="moviesContainer" class="movies-container">
+    <h2>Popular Movies</h2>
+  </div>
+  <div id="movieDetails">
+    <div class="closebtn" onclick="ToggleEvent()"></div>
+  </div>
+
+  <script src="api.js"></script>
+</body>
+</html>
